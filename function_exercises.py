@@ -14,21 +14,21 @@ def is_two(x):
 
     else:
         return False
-is_two(2)
+# is_two(2)
 
 #step 1, build input
-x = input("Please enter a number")
+#x = input("Please enter a number..")
 #step 2, set x is int
-x = int(x)
+#x = int(x)
 #step 3, define the function
-def is_two(x):
-    if x == 2:
-        return True 
+#def is_two(x):
+    #if x == 2:
+        #return True 
 #step 4, set else
-    else:
-        return False
+    #else:
+        #return False
 #step 5, print (x)
-is_two(x)
+#is_two(x)
 
 
 #Step 1, def the function, transfter x to int and set the condition to 2
@@ -36,40 +36,33 @@ def is_two(x):
     x = int(x)
     return x == 2
 #step 2, set input, and if input matches the condition, then true. 
-user_input = input("please enter a number")
-if is_two(user_input):
-    print(True)
-else:
-    print(False)
+# user_input = input("please enter a number")
+# if is_two(user_input):
+#     print(True)
+# else:
+#     print(False)
 
 
 #2. Define a function named is_vowel. It should return True 
 # if the passed string is a vowel, False otherwise.
 
-def is_vowel(y): 
-    #1. set up vowel 
-    vowel = 'aeiou'
-    #2. see if the string is vowel
-    if y.lower() in vowel:
-        return True
-
-    else:
-        return False
-is_vowel('E')
 
 
-#1. set up vowel
-y = input("Please enter a vowel string")
+#1. set up vowel value 
 vowel = 'aeiou'
+#2. ask the user to input a string
+# user_input = input("Please enter a vowel string")
+#3, def this vowel function, return all the vowels in lower
 def is_vowel(y): 
     #2. see if the string is vowel
-    if type(y) == str:
-        result = y.lower() in ['a','e','i','o','u']
-        return result
+    return y.lower() in vowel
 
-    else:
-        return False
-
+#4. all this function, if this funciton condition met, print true
+if is_vowel(user_input): 
+    print(True)
+#5. else print false
+else:
+    print(False)
 
 #3. Define a function named is_consonant. 
 # It should return True if the passed string is a consonant, 
@@ -166,15 +159,15 @@ handle_commas(commas)
    
 def get_letter_grade(num):
     if 88<= int(num)<=100: 
-        print('A')
+        return 'A'
     elif 80<= int(num)<=87:
-        print('B')
+        return'B'
     elif 67<= int(num)<=79:
-        print('C')
+        return 'C'
     elif 60<= int(num)<=66:
-        print('D')
+        return 'D'
     else: 
-        print('F')
+        return 'F'
 num = input("Please enter your score to get your grade")
 get_letter_grade(num)
 
@@ -228,3 +221,5 @@ def new_list(xx):
     return newlist
 new_list([1,1,1])
 
+if __name__ == "__main__":
+    pass
